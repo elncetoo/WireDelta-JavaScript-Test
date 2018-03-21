@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Age calculator</title>
+		<link rel="stylesheet" type="text/css" href="Css/Style.css">
+	</head>
+	<body>
+		<section id="hero">
+			<!--<h1>JavaScript Tasks Presentation </h1>	 -->
+		</section>
+		<section class="container box">
+			<h3 class="headline line-animation">Task №1 "The Age Calculator"</h3>
+			<div class="descr">
+				<ul>					
+					<p class="p-xs">Forgot how old you are? Calculate it!</p>
+					<li>Write a function named <code>calculateAge</code> that:</li>
+						<ul>
+							<li class="li-xs">takes 2 arguments: birth year, current year.</li>
+							<li class="li-xs">calculates the 2 possible ages based on those years.</li>
+							<li class="li-xs">outputs the result to the screen like so: "You are either NN or NN"</li>
+						</ul>
+					<li>Call the function three times with different sets of values.</li>
+					<li><b>Bonus</b>: Figure out how to get the current year in JavaScript instead of passing it in.</li>
+				</ul>
+			</div>
+			<div class="solution">
+				<div>
+					<img class="idea animate-fading" src="Img/idea.png" alt="light-bulb">	
+				</div>
+				<div>
+					<h3>The solution: <p><span id="Age"></span></p></h3>
+					<button onclick="calculateAge(1986, 2018)" class="btn">See First Age</button>
+					<button onclick="calculateAge(1991, 2018)" class="btn">See Second Age</button>
+					<button onclick="calculateAge(1979, 2018)" class="btn">See Third Age</button>
+				</div>
+			</div>
+		</section>
+		<section class="container box">
+			<h3 class="headline line-animation">Task №2 "The Lifetime Supply Calculator"</h3>
+			<div class="descr">
+				<ul>
+					<p class="p-xs">Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!</p>
+					<li>Write a function named <code>calculateSupply</code> that:</li>
+						<ul>
+							<li class="li-xs">takes 2 arguments: age, amount per day.</li>
+							<li class="li-xs">calculates the amount consumed for rest of the life (based on a constant max age).</li>
+							<li class="li-xs">outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X".</li>
+						</ul>
+						<li>Call that function three times, passing in different values each time.</li>
+						<li><b>Bonus</b>: Accept floating point values for amount per day, and round the result to a round number.</li>
+				</ul>
+			</div>
+			<br/>
+			<div class="solution">
+				<div>
+					<img class="idea animate-fading" src="Img/idea.png" alt="light-bulb">
+				</div>
+				<div>
+				<h3>The solution: <p><span id="Supply"></p></span></h3>
+					<button onclick="calculateSupply(86, 5)" class="btn">Calculate 1st Amount</button>
+					<button onclick="calculateSupply(78, 8)" class="btn">Calculate 2nd Amount</button>
+					<button onclick="calculateSupply(93, 3)" class="btn">Calculate 3rd Amount</button>
+				</div>
+			</div>
+		</section>
+		<section class="container box">
+			<h3 class="headline line-animation">Task №3 "The Geometrizer"</h3>
+			<div class="descr">
+				<ul>
+				<p class="p-xs">Create 2 functions that calculate properties of a circle. Create a function called <code>calcCircumfrence</code>:</p>
+					<li >Pass the radius to the function.</li>
+					<li >Calculate the circumference based on the radius, and output "The circumference is NN".</li>
+				</ul>
+				<br/>
+				<ul>
+				<p class="p-xs">Create a function called <code>calcArea</code>:</p>
+					<li >Pass the radius to the function.</li>
+					<li >Calculate the area based on the radius, and output "The area is NN".</li>
+				</ul>
+			</div>
+			<div class="solution">
+				<div>
+					<img class="idea animate-fading" src="Img/idea.png" alt="light-bulb">
+				</div>
+				<div>
+					<h3>The solution:</h3>	
+					<p id="calcC"></p>
+					<p id="calcA"></p>
+				</div>
+			</div>
+		</section>
+		<section class="container box">
+			<h3 class="headline line-animation">Task №4 "The Tempreture Converter"</h3>
+			<p >It's hot out! Let's make a converter based on the steps here:</p>
+			<div id="table">
+				<table>
+					<tr>
+						<th>Degrees</th>
+						<th>Conversion</th>
+					</tr>
+					<tr>
+						<td width="30%">°F&nbsp;to&nbsp;°C</td>
+						<td width="70%">Deduct 32, then multiply by 5, then divide by 9</td>
+					</tr>
+					<tr>
+						<td>°C&nbsp;to&nbsp;°F</td>
+						<td>Multiply by 9, then divide by 5, then add 32</td>
+					</tr>
+				</table>
+				<br/>
+			</div>
+			<div class="descr descr-two">
+				<ul>
+				<p class="p-xs">Create a function called <code>celsiusToFahrenheit</code>:</p>
+					<li>Store a celsius temperature into a variable.</li>
+					<li>Convert it to fahrenheit and output "NN°C is NN°F".</li>
+				</ul>
+				<br/>
+				<ul>
+				<p class="p-xs">Create a function called <code>fahrenheitToCelsius</code>:</p>
+					<li>Now store a fahrenheit temperature into a variable.</li>
+					<li>Convert it to celsius and output "NN°F is NN°C."</li>
+				</ul>
+			</div>
+			<div class="solution">
+				<div>
+					<img class="idea animate-fading" src="Img/idea.png" alt="light-bulb">
+				</div>
+				<div>
+					<h3>The solution:</h3>
+					<p id="toC"></p>
+					<p id="toF"></p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>Svilena Koleva</p>
+		</footer>
+		<script src="JS/scripts.js"></script>
+	</body>
+</html>
